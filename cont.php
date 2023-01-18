@@ -2,15 +2,14 @@
 
 $name = $_POST['name'];
 $email = $_POST['email'];
-$number = $_POST['number'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
 $mailheader = "From:".$name."<".$email.">\r\n";
 
-$recipient = "kingchatiment@gmail.com";
+$recipient = "example@gmail.com";
 
-mail($recipient, $subject, $number, $message, $mailheader) or die("Error!");
+mail($recipient, $subject, $message, $mailheader) or die("Error!");
 
 echo'
 
@@ -33,5 +32,9 @@ echo'
 </body>
 </html>
 
+
+
 ';
+
+
 ?>
