@@ -62,22 +62,16 @@
 
     <h2 class="heading">Nous Contacter</h2>
 
-    <form action="cont.php" method="post">
-
-        <div class="inputBox">
-            <input type="text" placeholder="name" name="name" id="name">
-            <input type="email" placeholder="email" name="email" id="email">
-        </div>
-
-        <div class="inputBox">
-            <input type="number" placeholder="number" name="number" id="number">
-            <input type="text" placeholder="subject" name="subject" id="subject">
-        </div>
-
-        <textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
-
-        <input type="submit" class="btn" value="send message">
-
+    <form action="cont.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject" id="subject">
+        <label for="message">Message</label>
+        <textarea name="message" cols="30" rows="10"></textarea>
+        <input type="submit" value="Send">
     </form>
 
 </section>
